@@ -1,0 +1,13 @@
+{
+    "keys": [
+        {
+            "column": "credit_card_number",
+            "key": "f4qK9yByJyrOKyredSw8rOE9RweQsF5fa2fpbVdEH0o="
+        },
+        {
+            "column": "debit_card_number",
+            "key": "lgMX3ErAhpQDQsKZsIp34wZIaN31Sn_Q-6gpBDP4iG8="
+        }
+    ],
+    "encrypted_CSV": "./data/output_dataset.csv"
+}

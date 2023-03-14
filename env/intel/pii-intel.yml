@@ -1,0 +1,24 @@
+name: pii-intel
+channels:
+  - conda-forge
+  - pytorch
+  - intel
+  - defaults
+dependencies:
+  - cpuonly
+  - python=3.9.0
+  - pytorch=1.13.0
+  - pip=21.2.4 
+  
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cpu
+    - torch==1.13.1+cpu 
+    - intel-extension-for-pytorch==1.13.0
+    - pandas==1.5.2
+    - cryptography==39.0.0
+    - transformers==4.25.1
+    - numpy==1.20.3
+    - numba==0.56.4
+    
+
+    

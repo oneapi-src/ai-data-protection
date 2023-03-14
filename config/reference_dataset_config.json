@@ -1,0 +1,73 @@
+{
+  "input_file": "./data/input_reference_dataset.csv",
+  "output_file": "./data/output_reference_dataset.csv",
+  "encryption_key_file": "./config/keys.json",
+
+  "operation":[
+    {
+      "column": "passport_number",
+      "type": "numeric",
+      "len": 10 
+    },
+    {
+      "column": "location",
+      "type": "string",
+      "len": 10 
+    },
+
+    {
+      "column": "Name",
+      "type": "name",
+      "len": 10 
+    },
+
+    {
+      "column": "phone_number",
+      "type": "phone",
+      "len": 10, 
+      "prefix": "+91" 
+    },
+    {
+      "column": "ip_address",
+      "type": "ip_address"
+    },
+   
+    {
+      "column": "Email",
+      "type": "email_address"
+    },
+    {
+      "column": "invoice_number",
+      "type": "alphanumeric", 
+      "len": 20
+    },
+    {
+      "column": "credit_card_number",
+      "type": "maskdigit",
+      "start": 3, 
+      "end": 8, 
+      "char": "X" 
+    },
+    {
+      "column": "social_security_number",
+      "type": "hash"
+    },
+    {
+      "column": "credit_card_number",
+      "type": "encrypt",
+      "index_number":1
+     },
+
+    {
+      "column": "debit_card_number",
+      "type": "encrypt",
+      "index_number":2
+    },
+     
+    {
+      "column": "description",
+      "type": "text"
+      
+    }
+  ]
+}

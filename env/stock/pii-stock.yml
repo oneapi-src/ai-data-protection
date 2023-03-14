@@ -1,0 +1,16 @@
+name: pii-stock
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - cpuonly
+  - python=3.9.0
+  - pytorch=1.12.0
+  - pip=21.2.4
+  - pip:
+    - pandas==1.5.2
+    - numpy==1.20.3
+    - cryptography==39.0.0
+    - transformers==4.25.1
+    - numba==0.56.4
