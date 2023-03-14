@@ -1,0 +1,28 @@
+--- build_name_generator_rnn.py	2023-01-09 14:28:20.113272045 +0530
++++ build_name_generator_rnn.py	2023-01-09 14:32:06.653268589 +0530
+@@ -309,7 +309,7 @@
+ print("a_last[4] =", a_last[4])
+ 
+ # %%
+-def model(data, ix_to_char, char_to_ix, num_iterations = 55000, n_a = 25, names = 10, vocab_size = 27):
++def model(data, ix_to_char, char_to_ix, num_iterations = 85000, n_a = 25, names = 10, vocab_size = 27):
+     """
+     Trains the model and generates names. 
+     
+@@ -380,4 +380,14 @@
+     return parameters
+ 
+ # %%
+-parameters = model(data, ix_to_char, char_to_ix)
+\ No newline at end of file
++parameters = model(data, ix_to_char, char_to_ix)
++
++## Saving the dictionaries to pkl file
++import pickle
++
++parameters['ix_to_char'] = ix_to_char
++parameters['char_to_ix'] = char_to_ix
++
++with open('name_generator.pkl', 'wb') as f:
++        pickle.dump(parameters, f)
++
